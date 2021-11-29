@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EEG", "EEG\EEG.pyproj", "{7167E2B7-8A1F-4740-9ACD-D3A7F4779C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuroPlayClient", "NeuroPlayClient\NeuroPlayClient.csproj", "{D2D75834-2187-4DDB-A08E-78783C21F6C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7167E2B7-8A1F-4740-9ACD-D3A7F4779C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7167E2B7-8A1F-4740-9ACD-D3A7F4779C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D75834-2187-4DDB-A08E-78783C21F6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D75834-2187-4DDB-A08E-78783C21F6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D75834-2187-4DDB-A08E-78783C21F6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D75834-2187-4DDB-A08E-78783C21F6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BE70DEB-727A-4531-B95E-BC840469E0AD}
+	EndGlobalSection
+EndGlobal
