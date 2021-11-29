@@ -133,3 +133,4 @@ bin
 .vs
 .idea
 variables
+file.npy

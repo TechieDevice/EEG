@@ -43,7 +43,7 @@ from scipy.signal import hilbert, chirp
 inp = -1
 X = []
 while inp != 0:
-    print('1 for input raw, 2 for create wavelet, 3 for input wavelet, 4 for learn, 5 for hilbert 0 for exit')
+    print('1 for input raw, 2 for create wavelet, 3 for input wavelet, 4 for learn, 5 for hilbert, 0 for exit')
     inp = input()
 
     if inp == '1':
@@ -89,10 +89,24 @@ while inp != 0:
 
     elif inp == '4':
         path_to_pb = './model'
-        graph = tf.saved_model.load(path_to_pb)
+        graph = tf.keras.models.load_model(path_to_pb)
+        graph.summary()
+
+        #net = tf.keras.applications.efficientnet.EfficientNetB4(
+        #include_top=False, weights='imagenet', input_tensor=None,
+        #input_shape=None, pooling=None)
+
+        batch_size = 36
+        epochs = 200
+        #net.trainable = True
+
+        graph.fit(X, epochs=epochs,
+            steps_per_epoch=10,
+            shuffle=True)
+
         
     elif inp == '5':
-
+        pass
 
     elif inp == '0':
         exit(0)
