@@ -87,7 +87,15 @@ namespace NeuroPlayClient
             dataBox.Text = data;
 
             string directiry = Directory.GetCurrentDirectory();
-            string fileName = "line" + i + ".json";
+            string fileName;
+            if (pathLabel.Text != String.Empty)
+            {
+                fileName = $"{pathLabel.Text}/line" + i + ".json";
+            }
+            else
+            {
+                fileName = "line" + i + ".json";
+            }
             string fullFileName = Path.Combine(directiry, fileName);
             File.WriteAllText(fullFileName, data);
 

@@ -38,11 +38,13 @@ namespace NeuroPlayClient
             this.dataBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pathLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(25, 86);
+            this.searchButton.Location = new System.Drawing.Point(22, 114);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(205, 64);
             this.searchButton.TabIndex = 0;
@@ -53,14 +55,14 @@ namespace NeuroPlayClient
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(102, 41);
+            this.statusLabel.Location = new System.Drawing.Point(93, 19);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(0, 17);
             this.statusLabel.TabIndex = 1;
             // 
             // grabDataButton
             // 
-            this.grabDataButton.Location = new System.Drawing.Point(25, 254);
+            this.grabDataButton.Location = new System.Drawing.Point(22, 278);
             this.grabDataButton.Name = "grabDataButton";
             this.grabDataButton.Size = new System.Drawing.Size(205, 59);
             this.grabDataButton.TabIndex = 2;
@@ -70,7 +72,7 @@ namespace NeuroPlayClient
             // 
             // disconnectButton
             // 
-            this.disconnectButton.Location = new System.Drawing.Point(25, 340);
+            this.disconnectButton.Location = new System.Drawing.Point(22, 359);
             this.disconnectButton.Name = "disconnectButton";
             this.disconnectButton.Size = new System.Drawing.Size(205, 63);
             this.disconnectButton.TabIndex = 3;
@@ -80,7 +82,7 @@ namespace NeuroPlayClient
             // 
             // connectButton
             // 
-            this.connectButton.Location = new System.Drawing.Point(25, 166);
+            this.connectButton.Location = new System.Drawing.Point(22, 194);
             this.connectButton.Name = "connectButton";
             this.connectButton.Size = new System.Drawing.Size(205, 66);
             this.connectButton.TabIndex = 4;
@@ -90,17 +92,17 @@ namespace NeuroPlayClient
             // 
             // dataBox
             // 
-            this.dataBox.Location = new System.Drawing.Point(300, 86);
+            this.dataBox.Location = new System.Drawing.Point(297, 114);
             this.dataBox.Multiline = true;
             this.dataBox.Name = "dataBox";
             this.dataBox.ReadOnly = true;
-            this.dataBox.Size = new System.Drawing.Size(471, 317);
+            this.dataBox.Size = new System.Drawing.Size(471, 308);
             this.dataBox.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 41);
+            this.label2.Location = new System.Drawing.Point(32, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 17);
             this.label2.TabIndex = 6;
@@ -110,11 +112,29 @@ namespace NeuroPlayClient
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(22, 66);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(746, 22);
+            this.textBox1.TabIndex = 7;
+            // 
+            // pathLabel
+            // 
+            this.pathLabel.AutoSize = true;
+            this.pathLabel.Location = new System.Drawing.Point(32, 46);
+            this.pathLabel.Name = "pathLabel";
+            this.pathLabel.Size = new System.Drawing.Size(74, 17);
+            this.pathLabel.TabIndex = 8;
+            this.pathLabel.Text = "save path:";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 508);
+            this.ClientSize = new System.Drawing.Size(792, 450);
+            this.Controls.Add(this.pathLabel);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataBox);
             this.Controls.Add(this.connectButton);
@@ -139,6 +159,8 @@ namespace NeuroPlayClient
         private System.Windows.Forms.TextBox dataBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label pathLabel;
     }
 }
 

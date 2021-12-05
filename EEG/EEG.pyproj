@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7167e2b7-8a1f-4740-9acd-d3a7f4779c3b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module.py</StartupFile>
+    <StartupFile>hht.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,7 @@
     <Compile Include="EEG.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="hht.py" />
     <Compile Include="module.py">
       <SubType>Code</SubType>
     </Compile>
