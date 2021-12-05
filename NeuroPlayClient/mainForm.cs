@@ -90,7 +90,7 @@ namespace NeuroPlayClient
             string fileName;
             if (pathLabel.Text != String.Empty)
             {
-                fileName = $"{pathLabel.Text}/line" + i + ".json";
+                fileName = $"{pathBox.Text}/line" + i + ".json";
             }
             else
             {

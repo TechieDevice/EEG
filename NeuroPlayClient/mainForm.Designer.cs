@@ -38,7 +38,7 @@ namespace NeuroPlayClient
             this.dataBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pathBox = new System.Windows.Forms.TextBox();
             this.pathLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -112,12 +112,12 @@ namespace NeuroPlayClient
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // textBox1
+            // pathBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(746, 22);
-            this.textBox1.TabIndex = 7;
+            this.pathBox.Location = new System.Drawing.Point(22, 66);
+            this.pathBox.Name = "pathBox";
+            this.pathBox.Size = new System.Drawing.Size(746, 22);
+            this.pathBox.TabIndex = 7;
             // 
             // pathLabel
             // 
@@ -134,7 +134,7 @@ namespace NeuroPlayClient
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.pathLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pathBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataBox);
             this.Controls.Add(this.connectButton);
@@ -159,7 +159,7 @@ namespace NeuroPlayClient
         private System.Windows.Forms.TextBox dataBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pathBox;
         private System.Windows.Forms.Label pathLabel;
     }
 }
