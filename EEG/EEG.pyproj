@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7167e2b7-8a1f-4740-9acd-d3a7f4779c3b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>hht.py</StartupFile>
+    <StartupFile>splitter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -37,6 +37,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="new_script.py" />
+    <Compile Include="splitter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="unt.py">
       <SubType>Code</SubType>
     </Compile>

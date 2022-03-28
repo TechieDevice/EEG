@@ -134,3 +134,4 @@ bin
 .idea
 variables
 file.npy
+.npd
