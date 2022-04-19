@@ -29,6 +29,7 @@
     <Compile Include="EEG.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="filteration.py" />
     <Compile Include="hht.py" />
     <Compile Include="module.py">
       <SubType>Code</SubType>
@@ -38,6 +39,9 @@
     </Compile>
     <Compile Include="new_script.py" />
     <Compile Include="splitter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unt.py">
